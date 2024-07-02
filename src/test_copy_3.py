@@ -1,7 +1,7 @@
 
 import re
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup1
 import threading
 from queue import Queue
 # 发送HTTP GET请求
