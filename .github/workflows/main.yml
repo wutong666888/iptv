@@ -16,11 +16,9 @@ jobs:
         python-version: 3.8
 
     - name: Install dependencies
-      run:
-        python3 -m pip install --upgrade pip
-    - name: Install dependencies
-      run: 
-        pip install -r src/requirements.txt
+      run: python3 -m pip install --upgrade pip
+    - name: Install requirements
+      run:  pip install -r src/requirements.txt
 
     - name: Run script
       run: python src/test_copy_3.py
