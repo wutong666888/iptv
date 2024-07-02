@@ -168,7 +168,7 @@ def channel_key(channel_name):
 # 对频道进行排序
 sorted_res = sorted(ch, key=lambda x: x.split(',')[0].strip())
 # sorted_res =  ch.sort(key=lambda x: channel_key(x[0]))
-with open("/src/itvlist.txt", 'w', encoding='utf-8') as file:
+with open("itvlist.txt", 'w', encoding='utf-8') as file:
     channel_counters = {}
     for result in sorted_res:
         file.write(f"{result}\n")
