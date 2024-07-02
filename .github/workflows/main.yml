@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   schedule:
     # IMPORTANT: Set cron job in UTC timezone
-    - cron:  '59 10 * * *'
+    - cron:  '04 11 * * *'
 
 jobs:
   run-python-script:
@@ -14,4 +14,4 @@ jobs:
         with:
           python-version: '3.12.3'
       - run: pip install requests re BeautifulSoup threading Queue time
-      - run: python test_copy_2.py
+      - run: python src/test_copy_3.py
