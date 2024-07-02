@@ -1,2 +1,2 @@
 requests
-BeatifulSoup4
+BeatifulSoup4==4.12.2
