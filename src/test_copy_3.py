@@ -173,6 +173,7 @@ script_dir = os.path.dirname(__file__)  # 获取当前脚本所在目录
 print(script_dir)
 file_path = os.path.join(script_dir, "itvlist.txt")
 print(sorted_res)
+
 with open('./src/itvlist.txt', 'w', encoding='utf-8') as file:
     channel_counters = {}
     for result in sorted_res:
