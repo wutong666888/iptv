@@ -25,10 +25,11 @@ jobs:
       run: pip install -r src/requirements.txt
     - name: Install Chrome and ChromeDriver
       run: |
-        sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
-        sudo apt-get install -yqq chromium-chromedriver
-        sudo update-alternatives --install /usr/bin/chromedriver chromedriver /usr/bin/chromedriver 1
+          CHROMEDRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
+          wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip
+          chmod +x chromedriver
+          sudo mv chromedriver /usr/local/bin/
     - name: Run tests with ChromeDriver
       env:
         CHROME_WEBDRIVER: '/usr/bin/chromedriver'
