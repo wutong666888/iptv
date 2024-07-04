@@ -1,0 +1,2 @@
+凤凰卫视,http://playtimeshift-live.ifeng.com/timeshift/live/06OLEEWQKN4/timeshift.m3u8?txKbps=702&delay=967
+浙江卫视,http://222.188.112.68:10000/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
