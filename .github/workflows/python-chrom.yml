@@ -1,6 +1,3 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
-
 name: Python application chrom
 
 on:
@@ -21,29 +18,34 @@ jobs:
       with:
         python-version: "3.10"
     - name: Print current directory
-      run: pwd  # 确认当前工作目录
+      run: pwd
     - name: Install dependencies
       run: python3 -m pip install --upgrade pip
     - name: Install requirements
-      run:  pip install -r src/requirements.txt
-    - name: Get Chrome and ChromeDriver
+      run: pip install -r src/requirements.txt
+    - name: Install Chrome and ChromeDriver
       run: |
-        wget -q -O - https://www.googleapis.com/discovery/v1/apis/storage/v1/rest | jq '.schemas.resources.Process.methods.post.parameterOrder'
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
         sudo apt-get install -yqq chromium-chromedriver
         sudo update-alternatives --install /usr/bin/chromedriver chromedriver /usr/bin/chromedriver 1
     - name: Run tests with ChromeDriver
       env:
-        CHROMEWEBDRIVER: '/usr/bin/chromedriver'
-        CHROMEDRIVER_CHROME_PATH: '/usr/bin/google-chrome-stable'  
+        CHROME_WEBDRIVER: '/usr/bin/chromedriver'
+        CHROMEDRIVER_CHROME_PATH: '/usr/bin/google-chrome-stable'
+      run: |
+        # 在这里添加使用ChromeDriver的测试运行命令
+        # 例如：pytest -v --browser-name=chrome src/test.py
+        # 注意：确保你的测试脚本能够读取到环境变量
     - name: Test with pytest
       run: |
         python src/test.py
-    - name: Commit files
+    - name: Commit and Push files
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@users.noreply.github.com"
-          git add .
-          git commit -m "Add itvlist.txt to src directory"
-          git push
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@users.noreply.github.com"
+        git add .
+        git commit -m "Add itvlist.txt to src directory"
+        git push origin main  # 使用GITHUB_TOKEN进行身份验证
