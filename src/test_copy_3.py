@@ -76,7 +76,7 @@ def worker():
                 result = "http://tonkiang.us/alllist.php?s={}&c=false".format(url)
                 #print(result)
                 response3 = requests.get(result, headers=headers)
-                #print(response3.text)
+                print(response3.text)
                 soup = BeautifulSoup(response3.text, 'html.parser')
                 channels = soup.find_all('div', class_='result')
                 for channel in channels:
@@ -92,6 +92,8 @@ def worker():
                         url_end = onclick_attr['onclick'].rfind('"')
                         url = onclick_attr['onclick'][url_start:url_end]
                         result1 = "{},{}".format(channel_name,url)
+                        print(result1)
+
                         ch.append(result1)
                         #print("频道名称:", result1)
                         # #break  # 假设每个result只对应一个有效URL
