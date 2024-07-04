@@ -74,7 +74,7 @@ def worker():
                 "Content-Type": "application/x-www-form-urlencoded",
                 "User-Agent": choice(user_agents),
                 "Host": "tonkiang.us",
-                "Referer": "http://tonkiang.us/hotellist.html?s=113.251.92.182:5555"
+                "Referer": "http://tonkiang.us/hotellist.html?s=125.76.174.199%3A8888&Submit=+"
             }
 
             for url in x_urls: 
