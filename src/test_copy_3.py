@@ -1,7 +1,7 @@
 
 import re
 import requests
-import random as choice
+from random import choice
 from bs4 import BeautifulSoup
 import threading
 from queue import Queue
