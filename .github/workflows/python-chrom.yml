@@ -28,8 +28,12 @@ jobs:
           CHROMEDRIVER_VERSION="126.0.6478.126"
           wget https://storage.googleapis.com/chrome-for-testing-public/$CHROMEDRIVER_VERSION/linux64/chrome-headless-shell-linux64.zip
           unzip chrome-headless-shell-linux64.zip
-          chmod +x chromedriver
           sudo mv chromedriver /usr/local/bin/
+          sudo chown root:root /usr/local/bin/chromedriver
+          sudo chmod +x /usr/local/bin/chromedriver
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo dpkg -i google-chrome-stable_current_amd64.deb
+          sudo apt-get install -f
     - name: Run tests with ChromeDriver
       env:
         CHROME_WEBDRIVER: '/usr/bin/chromedriver'
