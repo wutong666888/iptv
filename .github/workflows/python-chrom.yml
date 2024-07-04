@@ -37,6 +37,7 @@ jobs:
           wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo dpkg -i google-chrome-stable_current_amd64.deb
           sudo apt-get install -f
+          rm -rf chromedriver
     - name: Run tests with ChromeDriver
       env:
         CHROME_WEBDRIVER: '/usr/bin/chromedriver'
