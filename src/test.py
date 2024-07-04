@@ -1,6 +1,5 @@
 from math import e
 from bs4 import BeautifulSoup
-from click import style
 from selenium import webdriver
 import time
 import re
