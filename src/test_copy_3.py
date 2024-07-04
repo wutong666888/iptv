@@ -1,6 +1,7 @@
 
 import re
 import requests
+import random as choice
 from bs4 import BeautifulSoup
 import threading
 from queue import Queue
@@ -39,7 +40,11 @@ else:
 results = []
 
 error_channels = []
-
+user_agents = [
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+    # 更多 User-Agent ...
+]
 
 # 定义工作线程函数
 def worker():
@@ -67,7 +72,7 @@ def worker():
             print(f"内容{x_urls}")
             headers = {
                 "Content-Type": "application/x-www-form-urlencoded",
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+                "User-Agent": choice(user_agents),
                 "Host": "tonkiang.us",
                 "Referer": "http://tonkiang.us/hotellist.html?s=113.251.92.182:5555"
             }
