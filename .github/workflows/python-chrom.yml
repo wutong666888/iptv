@@ -27,7 +27,7 @@ jobs:
       run: |
           CHROMEDRIVER_VERSION="126.0.6478.126"
           wget https://storage.googleapis.com/chrome-for-testing-public/$CHROMEDRIVER_VERSION/linux64/chrome-headless-shell-linux64.zip
-          unzip chrome-headless-shell-linux64.zip
+          unzip chrome-headless-shell-linux64.zip -d ./ 
           sudo mv chromedriver /usr/local/bin/
           sudo chown root:root /usr/local/bin/chromedriver
           sudo chmod +x /usr/local/bin/chromedriver
