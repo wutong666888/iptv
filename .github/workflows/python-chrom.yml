@@ -1,0 +1,49 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Python application chrom
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Print current directory
+      run: pwd  # 确认当前工作目录
+    - name: Install dependencies
+      run: python3 -m pip install --upgrade pip
+    - name: Install requirements
+      run:  pip install -r src/requirements.txt
+    - name: Get Chrome and ChromeDriver
+      run: |
+        wget -q -O - https://www.googleapis.com/discovery/v1/apis/storage/v1/rest | jq '.schemas.resources.Process.methods.post.parameterOrder'
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+        sudo apt-get install -yqq chromium-chromedriver
+        sudo update-alternatives --install /usr/bin/chromedriver chromedriver /usr/bin/chromedriver 1
+    - name: Run tests with ChromeDriver
+      env:
+        CHROMEWEBDRIVER: '/usr/bin/chromedriver'
+        CHROMEDRIVER_CHROME_PATH: '/usr/bin/google-chrome-stable'  
+    - name: Test with pytest
+      run: |
+        python src/test.py
+    - name: Commit files
+      run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@users.noreply.github.com"
+          git add .
+          git commit -m "Add itvlist.txt to src directory"
+          git push
