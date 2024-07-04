@@ -1,4 +1,4 @@
-import os
+
 import re
 import requests
 from bs4 import BeautifulSoup
@@ -167,14 +167,9 @@ def channel_key(channel_name):
 
 # 对频道进行排序
 sorted_res = sorted(ch, key=lambda x: x.split(',')[0].strip())
+print(ch)
 # sorted_res =  ch.sort(key=lambda x: channel_key(x[0]))
-
-script_dir = os.path.dirname(__file__)  # 获取当前脚本所在目录
-print(script_dir)
-file_path = os.path.join(script_dir, "itvlist.txt")
-print(sorted_res)
-
-with open('./src/itvlist.txt', 'w', encoding='utf-8') as file:
+with open("./src/itvlist.txt", 'w', encoding='utf-8') as file:
     channel_counters = {}
     for result in sorted_res:
         file.write(f"{result}\n")
