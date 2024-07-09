@@ -10,11 +10,11 @@ from queue import Queue
 task_queue = Queue()
 # 创建一个Chrome WebDriver实例
 chrome_options = Options()
-# chrome_options.add_argument('--no-sandbox')
-# chrome_options.add_argument('--headless')
-# chrome_options.add_argument('--disable-extensions')
-# chrome_options.add_argument('--disable-gpu')
-# chrome_options.add_argument('--disable-dev-shm-usage')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-extensions')
+chrome_options.add_argument('--disable-gpu')
+chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_experimental_option("detach",True)
 
 driver = webdriver.Chrome(options = chrome_options)
@@ -88,7 +88,7 @@ def worker():
 
 # 创建多个工作线程
 num_threads = task_queue.qsize()
-for _ in range(3):
+for _ in range(2):
     t = threading.Thread(target=worker, daemon=True)  # 将工作线程设置为守护线程
     t.start()
 
