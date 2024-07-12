@@ -1,4 +1,3 @@
-(Moldova) Publika TV,http://zqjy.info/tv/NjE1OTg4
 .sci-fi Russia (480p) [Geo-blocked],http://zqjy.info/tv/NTY2NzMx
 13th Street HD,http://zqjy.info/tv/NjgyNTYx
 24/7 Canal de Noticias,http://zqjy.info/tv/NzUzNDA0
@@ -12,47 +11,48 @@ Avivamiento TV (720p),http://zqjy.info/tv/NDI0MDM2
 BBC Earth,http://zqjy.info/tv/NTg0NTg2
 BabyTV,http://zqjy.info/tv/NzAzMTg0
 Better Health TV (480p),http://zqjy.info/tv/NzE2NDg5
-BipTV,http://zqjy.info/tv/NDYwMzAy
 CBTV Now,http://zqjy.info/tv/NjkyMTAz
+CCTV1,http://zqjy.info/tv/NzU1Mjgz
 CCTV1,http://zqjy.info/tv/NzUwMDg1
-CCTV3,http://zqjy.info/tv/NzQzNjY1
+CCTV10,http://zqjy.info/tv/NzU1MzEw
+CCTV2,http://zqjy.info/tv/NzU1Nzkz
 CCTV3-4K,http://zqjy.info/tv/NzEyMDcx
 CCTV4K,http://zqjy.info/tv/NzQ1MzY3
-CCTV7国防军事,http://zqjy.info/tv/NzU0MDc4
 CNN CA,http://zqjy.info/tv/NTg1NzY1
-Cinema,http://zqjy.info/tv/NzE4MTEy
+Circle,http://zqjy.info/tv/NDQzNzQw
 DSTV (720p),http://zqjy.info/tv/NzE2NDQ3
 Discovery,http://zqjy.info/tv/NTg5Njk2
 Discovery,http://zqjy.info/tv/NTg5Njk2
-Dubai ONE,http://zqjy.info/tv/NDA5NDM0
 ELEVEN体育,http://zqjy.info/tv/NzI1Nzc5
-Emanet S01 E13,http://zqjy.info/tv/NzE4MzUw
-EstrellaTV,http://zqjy.info/tv/NzUzNjgy
+Emanet S01 E15,http://zqjy.info/tv/NzE4Mzcy
+EstrellaTV,http://zqjy.info/tv/NzU1MjQw
 Frikanalen,http://zqjy.info/tv/NDI5OTU5
 GLORY Kickboxing,http://zqjy.info/tv/NzUyNDY2
 HD HRT 1,http://zqjy.info/tv/NjQ1ODY5
-HD TELECINE PIPOCA,http://zqjy.info/tv/NjUxMjIw
 Hunat TV (480p),http://zqjy.info/tv/NTc5ODUy
 IPTV5,http://zqjy.info/tv/NzUxMDk2
 Im.Your.Woman.2020,http://zqjy.info/tv/NzE1ODM4
 JKN 18,http://zqjy.info/tv/NzUxODk1
+LFM TV HD,http://zqjy.info/tv/NjY4MzM4
 Mercy.Black.2020,http://zqjy.info/tv/NzE5MjMz
 My TV (1080p),http://zqjy.info/tv/NzUxNjE4
 My TV Channel (576p),http://zqjy.info/tv/NzE1MTY1
 NAT TV,http://zqjy.info/tv/NzE4NTky
-NAT TV,http://zqjy.info/tv/NzE4NTky
 NOVA SPORTS 2 HD,http://zqjy.info/tv/Njg1OTQ3
+Newsy,http://zqjy.info/tv/MzE2MDk=
+PUNJAB TV,http://zqjy.info/tv/NzE5NTAw
 Panorama TV (720p),http://zqjy.info/tv/NzE2NzEy
 Persiana Family,http://zqjy.info/tv/NzM1ODkz
 Press TV (720p),http://zqjy.info/tv/NjczNTUx
-Rai Movie [Geo-blocked],http://zqjy.info/tv/NTgyNjQ3
+Rai Movie,http://zqjy.info/tv/NzM5NTYy
 SBC HEVC,http://zqjy.info/tv/NjI2NjM5
 Show TV,http://zqjy.info/tv/NzUyMjQ2
-Sky Flix Movies,http://zqjy.info/tv/NjExODg3
+Sky Flix Movies,http://zqjy.info/tv/NjM4MzM4
 StarTalk TV,http://zqjy.info/tv/NzUyMzky
 TBSテレビ,http://zqjy.info/tv/NjU3NDU3
 TVB明珠,http://zqjy.info/tv/NzUxNDEx
-TVB直播,http://zqjy.info/tv/NzQzNDA0
+TVB星河,http://zqjy.info/tv/NzI4NDI3
+TeleCinco Trelew (240p),http://zqjy.info/tv/NzUyOTg4
 VC Multichannel (720p),http://zqjy.info/tv/NzE1MTY4
 YOSSO TV Music Hits,http://zqjy.info/tv/NTMxMDcx
 Zee Business,http://zqjy.info/tv/Njc3NDYy
@@ -64,16 +64,15 @@ iHOT爱历史,http://zqjy.info/tv/NzQ4ODUw
 其它zbrzbrzbrzbr,http://zqjy.info/tv/Nw==
 其它zbrzbrzbrzbr,http://zqjy.info/tv/Nw==
 其它zbrzbrzbrzbr,http://zqjy.info/tv/Nw==
+军事评论,http://zqjy.info/tv/NzU1NTAw
 凤凰中文 (720p),http://zqjy.info/tv/NzUxNjU1
 北碚综合频道,http://zqjy.info/tv/NjY3NzE1
 天映经典,http://zqjy.info/tv/NzIyMjY5
 成龙2,http://zqjy.info/tv/NzA2NDM2
-新海南,http://zqjy.info/tv/NzQ4ODcy
 汉源综合,http://zqjy.info/tv/NzUwNTk1
 江苏卫视,http://zqjy.info/tv/NzA3OTcz
 江苏移动电视剧,http://zqjy.info/tv/NzM1OTc1
 碧玉簪,http://zqjy.info/tv/NzA2MzI5
-韩宝仪无聊的游戏,http://zqjy.info/tv/NTM4Mjk1
 韩宝仪无聊的游戏,http://zqjy.info/tv/NTM4Mjk1
 韩宝仪无聊的游戏,http://zqjy.info/tv/NTM4Mjk1
 韩宝仪无聊的游戏,http://zqjy.info/tv/NTM4Mjk1
