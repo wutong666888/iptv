@@ -16,6 +16,9 @@ chrome_options.add_argument('--disable-extensions')
 chrome_options.add_argument('--disable-gpu')
 chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_experimental_option("detach",True)
+chrome_options.add_argument("--disable-web-security")
+chrome_options.add_argument("--use-fake-ui-for-media-stream")
+chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3")
 
 driver = webdriver.Chrome(options = chrome_options)
 # 使用WebDriver访问网页
