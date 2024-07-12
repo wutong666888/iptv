@@ -10,16 +10,10 @@ from queue import Queue
 task_queue = Queue()
 # 创建一个Chrome WebDriver实例
 chrome_options = Options()
-chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--headless')
-chrome_options.add_argument('--disable-extensions')
-chrome_options.add_argument('--disable-gpu')
-chrome_options.add_argument('--disable-dev-shm-usage')
-chrome_options.add_experimental_option("detach",True)
 chrome_options.add_argument("--disable-web-security")
 chrome_options.add_argument("--use-fake-ui-for-media-stream")
 chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3")
-
 driver = webdriver.Chrome(options = chrome_options)
 # 使用WebDriver访问网页
 driver.get('http://tonkiang.us')  # 将网址替换为你要访问的网页地址
