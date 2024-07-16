@@ -23,6 +23,7 @@ channelListNew = []
 span_a_list = driver.find_elements(By.CSS_SELECTOR, "span.sh a")
 for span in span_a_list:
     task_queue.put(span)
+    break
 # 关闭WebDriver
 #driver.quit()
 # 定义工作线程函数
